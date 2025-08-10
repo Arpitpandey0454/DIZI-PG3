@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Toggle subject sections
+    
     document.querySelectorAll('.subject-card').forEach(card => {
       const btn = card.querySelector('.chev');
       const body = card.querySelector('.subject-body');
@@ -9,19 +9,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 navButtons.forEach(button => {
   button.addEventListener("click", () => {
-    // Remove active class from all buttons
+   
     navButtons.forEach(btn => btn.classList.remove("active"));
-    // Add active class to clicked button
+
     button.classList.add("active");
   });
 });
-
-  
-      // start expanded
       btn.addEventListener('click', () => {
         const expanded = btn.getAttribute('aria-expanded') === 'true';
         if (expanded) {
-          // collapse
+          
           body.style.display = 'none';
           btn.setAttribute('aria-expanded', 'false');
           btn.style.transform = 'rotate(180deg)';

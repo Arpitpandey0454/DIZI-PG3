@@ -39,7 +39,7 @@ body::after{
   background: radial-gradient(circle at 70% 65%, rgba(187,134,252,0.30) 0%, rgba(187,134,252,0.12) 25%, transparent 60%);
 }
 
-/* page layout */
+
 .page{
   height: 10px;
   display:flex;
@@ -48,9 +48,9 @@ body::after{
   min-height:100vh;
 }
 
-/* SIDEBAR */
+
 .sidebar {
-  margin-top: 80px;
+  margin-top: 60px;
   height: auto;
   min-height: 80vh;
   display: flex;
@@ -75,7 +75,7 @@ body::after{
   
 }
 
-/* logo */
+
 .logo{
   position: absolute;
  height: 10px;
@@ -85,7 +85,7 @@ body::after{
 }
 .logo span{color:#111; margin-left:3px}
 
-/* nav */
+
 .nav ul{list-style:none;padding:0;margin:18px 0 0 0}
 
 .nav .nav-item {
@@ -98,7 +98,7 @@ body::after{
   font-weight: 500;
   cursor: pointer;
   margin-bottom: 8px;
-  transition: all 0.25s ease; /* smooth hover */
+  transition: all 0.25s ease; 
 }
 
 .nav .nav-item .icon {
@@ -107,7 +107,7 @@ body::after{
   opacity: 0.95;
 }
 
-/* Active and Hover = solid purple, white text */
+
 .nav .nav-item.active,
 .nav .nav-item:hover {
   background-color: var(--purple-600);
@@ -121,7 +121,7 @@ body::after{
 }
 
 
-/* logout */
+
 .logout{
   color:var(--muted);
   font-weight:500;
@@ -130,7 +130,7 @@ body::after{
   border-radius:10px
 }
 
-/* MAIN */
+
 .main{
   flex:1;
   display:flex;
@@ -139,7 +139,7 @@ body::after{
   position:relative
 }
 
-/* Profile pill */
+
 .profile-pill {
   position: absolute;
   top: -12px;
@@ -165,7 +165,7 @@ body::after{
 
 
 
-/* top bar */
+
 .topbar{
   display:flex;
   justify-content:space-between;
@@ -178,7 +178,7 @@ body::after{
   margin:0
 }
 
-/* main content card */
+
 .content-card{
   position:relative;
   top: 10%;
@@ -196,7 +196,7 @@ body::after{
   box-shadow: 5px 5px 40px rgba(135, 127, 206, 0.509);
 }
 
-/* Subject card */
+
 .subject-card{
   margin-bottom:22px;
   border-radius:14px;
@@ -220,7 +220,7 @@ body::after{
   margin-top:6px
 }
 
-/* header gradients */
+
 .subject-math{
   background: linear-gradient(90deg,#a8d4ff,#bfaefc);
   color:#15283a;
@@ -230,7 +230,7 @@ body::after{
   color:#3a2b27;
 }
 
-/* chevron */
+
 .chev{
   width:44px;
   height:44px;
@@ -245,7 +245,7 @@ body::after{
   transition: transform .25s ease;
 }
 
-/* subject body */
+
 .subject-body{
   padding:18px 0 24px 0
 }
@@ -258,13 +258,13 @@ body::after{
   overflow:hidden;
 }
 
-/* table */
+
 table{ width:100%; border-collapse:collapse; font-size:14px; }
 thead th{ text-align:left; padding:14px 18px; color:#666; background:transparent }
 tbody td{ padding:14px 18px; border-top:1px solid rgba(20,20,40,0.04); color:#333 }
 tbody tr:hover td{ background: rgba(123,97,255,0.02) }
 
-/* download cell */
+
 td.dl{
   text-align:right;
   width:60px;
@@ -309,7 +309,7 @@ td.dl{
       display: flex;
       flex-direction: row;
       gap: 8px;
-      overflow-x: auto; /* Allows horizontal scrolling on small screens */
+      overflow-x: auto; 
   }
 
   .nav .nav-item {
@@ -317,7 +317,7 @@ td.dl{
   }
 
   .logout {
-      display: none; /* Hide logout button to save space on small screens */
+      display: none; 
   }
 
   .main {
@@ -335,7 +335,7 @@ td.dl{
       top: 0;
   }
 
-  /* Adjust table for smaller screens to prevent overflow */
+  
   table {
       width: 100%;
       display: block;
